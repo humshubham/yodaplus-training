@@ -31,5 +31,5 @@ class CommentViewSet(viewsets.ModelViewSet, FirstFiveMixin):
     A viewset for viewing and editing Comment instances.
     """
     serializer_class = CommentSerializer
-    queryset = Comment.objects.all()
+    queryset = Comment.objects.prefetch_related('task').all()
 
