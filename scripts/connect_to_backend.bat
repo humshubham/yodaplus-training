@@ -1,0 +1,1 @@
+docker exec -it yodaplus-training-1 bash
